@@ -35,7 +35,6 @@ script:
     BUILD_FLAVOR="eng"
     #lunch omni_vivaltolte-${BUILD_FLAVOR}
     lunch omni_vivaltolte-eng
-    nproc --all
     make -j$(nproc --all) recoveryimage
     exit
     EOF
