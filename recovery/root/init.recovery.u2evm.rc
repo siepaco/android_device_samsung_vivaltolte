@@ -1,0 +1,14 @@
+
+on early-init
+    # legacy_va_layout.
+    # If non-zero, this sysctl disables the new 32-bit mmap layout - the kernel
+    # will use the legacy (2.4) layout for all processes.
+    write /proc/sys/vm/legacy_va_layout 1
+
+    # Avoid kernel RAMDump panic as android wont be booted(90 sec timeout) in 
+    # recovery mode
+    write /sys/module/ramdump/parameters/android_booted 1
+
+service mpro /sbin/mpro
+    oneshot
+
