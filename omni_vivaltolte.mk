@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Add this line if your device is 64-bit
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Otherwise, If you have 32-bit device, add the below line instead of above line
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk
 
