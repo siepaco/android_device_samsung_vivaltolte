@@ -34,6 +34,7 @@ TW_THEME := portrait_hdpi                     # Set the exact theme you wanna us
 DEVICE_RESOLUTION := 480x800                 # The Resolution of your Device
 TARGET_SCREEN_HEIGHT := 800                    # The height
 TARGET_SCREEN_WIDTH := 480                      # The width
+
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 # Set the Brightness Control File Path below (as per your chip/device)
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
